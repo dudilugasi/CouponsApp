@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+	<class name="com.wordpress.dudilugasi.model.Coupon" table="COUPONS">
+		<id name="id" type="int" column="ID" >
+			<generator class="increment"/>
+		</id>
+		<property name="name">
+			<column name="NAME"/>
+		</property>
+		<property name="description">
+			<column name="DESCRIPTION"/>
+		</property>
+		<property name="category">
+			<column name="category" />
+		</property>
+		<property name="x">
+			<column name="x" />
+		</property>
+		<property name="y">
+			<column name="y" />
+		</property>
+		<property name="expDate">
+			<column name="expdate"/>
+		</property>
+		<property name="price">
+            <column name="price"/>
+        </property>
+	</class>
+</hibernate-mapping>
